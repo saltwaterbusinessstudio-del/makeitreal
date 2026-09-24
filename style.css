@@ -1570,3 +1570,22 @@ p {
   opacity: 0.7;
   cursor: wait;
 }
+/* =========================================
+   FORCE DECORATIVE SYMBOLS TO TEXT STYLE
+   ========================================= */
+
+.button span,
+.text-link span,
+.art-symbol,
+.service-icon,
+.about-star,
+.cta-star,
+.quiz-hero::after,
+.quiz-note span,
+.choice-icon,
+.submit-arrow,
+.success-star {
+  font-family: "DM Sans", Arial, sans-serif;
+  font-variant-emoji: text;
+  font-style: normal;
+}
