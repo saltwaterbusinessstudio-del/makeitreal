@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Let's Make It Real | Make it Real</title>
+
+  <meta
+    name="description"
+    content="Tell us about the idea, passion, or business you're ready to make real."
+  >
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=DM+Serif+Display:ital@0;1&display=swap"
+    rel="stylesheet"
+  >
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="quiz-page">
+
+  <!-- Navigation -->
+
+  <header class="site-header">
+    <div class="container nav">
+
+      <a href="index.html" class="logo">
+        Make it <span>Real.</span>
+      </a>
+
+      <nav class="nav-links">
+        <a href="index.html#how-it-works">How It Works</a>
+        <a href="quiz.html">Contact</a>
+      </nav>
+
+      <a href="index.html" class="text-link">
+        Back to home <span>↩</span>
+      </a>
+
+    </div>
+  </header>
+
+
+  <main>
+
+    <!-- Intro -->
+
+    <section class="quiz-hero">
+
+      <div class="container quiz-hero-inner">
+
+        <div class="section-tag">LET'S MAKE IT REAL</div>
+
+        <h1>
+          Tell me about your thing
+          
+        </h1>
+
+        <p>
+          Whether it is an idea, a skill, a passion,
+          or something you already started but aren't sure what's next.
+        </p>
+
+        <div class="quiz-note">
+          <span>✳</span>
+          All questions are optional. Feel free to skip anything you haven't figured out yet.
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- Discovery Form -->
+
+    <section class="discovery-section quiz-discovery">
+
+      <div class="container discovery-container">
+
+        <form class="discovery-form" id="discoveryForm">
+
+
+          <!-- Question 1 -->
+
+          <div class="question-block">
+
+            <div class="question-number">01</div>
+
+            <div class="question-content">
+
+              <label class="question-title">
+                So... what are you dreaming up?
+              </label>
+
+              <p class="question-subtitle">
+                What kind of business are you imagining?
+              </p>
+
+              <div class="choice-grid">
+
+                <label class="choice-card">
+                  <input
+                    type="radio"
+                    name="business-type"
+                    value="product"
+                  >
+                  <span class="choice-icon">✦</span>
+                  <span class="choice-text">A product or shop</span>
+                </label>
+
+                <label class="choice-card">
+                  <input
+                    type="radio"
+                    name="business-type"
+                    value="service"
+                  >
+                  <span class="choice-icon">↗</span>
+                  <span class="choice-text">A service</span>
+                </label>
+
+                <label class="choice-card">
+                  <input
+                    type="radio"
+                    name="business-type"
+                    value="creative"
+                  >
+                  <span class="choice-icon">◒</span>
+                  <span class="choice-text">Creative work</span>
+                </label>
+
+                <label class="choice-card">
+                  <input
+                    type="radio"
+                    name="business-type"
+                    value="teaching"
+                  >
+                  <span class="choice-icon">✎</span>
+                  <span class="choice-text">Teaching or coaching</span>
+                </label>
+
+                <label class="choice-card">
+                  <input
+                    type="radio"
+                    name="business-type"
+                    value="events"
+                  >
+                  <span class="choice-icon">✳</span>
+                  <span class="choice-text">Events or experiences</span>
+                </label>
+
+                <label class="choice-card">
+                  <input
+                    type="radio"
+                    name="business-type"
+                    value="other"
+                  >
+                  <span class="choice-icon">+</span>
+                  <span class="choice-text">Something completely different</span>
+                </label>
+
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <!-- Question 2 -->
+
+          <div class="question-block">
+
+            <div class="question-number">02</div>
+
+            <div class="question-content">
+
+              <label
+                class="question-title"
+                for="industry"
+              >
+                What's your thing?
+              </label>
+
+              <p class="question-subtitle">
+                What industry, interest, skill, or world does your idea live in?
+              </p>
+
+              <input
+                type="text"
+                id="industry"
+                name="industry"
+                class="discovery-input"
+                placeholder="Jewelry, fitness, photography, gardening..."
+              >
+
+            </div>
+
+          </div>
+
+
+          <!-- Question 3 -->
+
+          <div class="question-block">
+
+            <div class="question-number">03</div>
+
+            <div class="question-content">
+
+              <label
+                class="question-title"
+                for="passion"
+              >
+                Why this?
+              </label>
+
+              <p class="question-subtitle">
+                What made you want to do this in the first place?
+              </p>
+
+              <textarea
+                id="passion"
+                name="passion"
+                class="discovery-textarea"
+                rows="5"
+                placeholder="Tell me the story behind the idea..."
+              ></textarea>
+
+            </div>
+
+          </div>
+
+
+          <!-- Question 4 -->
+
+          <div class="question-block">
+
+            <div class="question-number">04</div>
+
+            <div class="question-content">
+
+              <label
+                class="question-title"
+                for="vision"
+              >
+                Imagine this actually works.
+              </label>
+
+              <p class="question-subtitle">
+                What would this business make possible in your life?
+              </p>
+
+              <textarea
+                id="vision"
+                name="vision"
+                class="discovery-textarea"
+                rows="5"
+                placeholder="More freedom? A creative career? Extra income? Your own schedule? Something bigger?"
+              ></textarea>
+
+            </div>
+
+          </div>
+
+
+          <!-- Question 5 -->
+
+          <div class="question-block">
+
+            <div class="question-number">05</div>
+
+            <div class="question-content">
+
+              <label class="question-title">
+                Where are you right now?
+              </label>
+
+              <p class="question-subtitle">
+                Pick the one that feels most like where you are today.
+              </p>
+
+              <div class="stage-options">
+
+                <label class="stage-option">
+                  <input
+                    type="radio"
+                    name="stage"
+                    value="idea"
+                  >
+                  <span>It's still an idea</span>
+                </label>
+
+                <label class="stage-option">
+                  <input
+                    type="radio"
+                    name="stage"
+                    value="experimenting"
+                  >
+                  <span>I'm experimenting</span>
+                </label>
+
+                <label class="stage-option">
+                  <input
+                    type="radio"
+                    name="stage"
+                    value="selling"
+                  >
+                  <span>I've made or sold something</span>
+                </label>
+
+                <label class="stage-option">
+                  <input
+                    type="radio"
+                    name="stage"
+                    value="customers"
+                  >
+                  <span>I've already had customers</span>
+                </label>
+
+                <label class="stage-option">
+                  <input
+                    type="radio"
+                    name="stage"
+                    value="stuck"
+                  >
+                  <span>I'm already running it</span>
+                </label>
+
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <!-- Question 6 -->
+
+          <div class="question-block">
+
+            <div class="question-number">06</div>
+
+            <div class="question-content">
+
+              <label class="question-title">
+                What's getting in your way?
+              </label>
+
+              <p class="question-subtitle">
+                Pick anything that's making this harder than it needs to be.
+              </p>
+
+              <div class="challenge-grid">
+
+                <label class="challenge-card">
+                  <input
+                    type="checkbox"
+                    name="challenge"
+                    value="starting"
+                  >
+                  <span>I don't know where to start</span>
+                </label>
+
+                <label class="challenge-card">
+                  <input
+                    type="checkbox"
+                    name="challenge"
+                    value="overwhelmed"
+                  >
+                  <span>I'm overwhelmed by everything</span>
+                </label>
+
+                <label class="challenge-card">
+                  <input
+                    type="checkbox"
+                    name="challenge"
+                    value="offer"
+                  >
+                  <span>I don't know what to sell</span>
+                </label>
+
+                <label class="challenge-card">
+                  <input
+                    type="checkbox"
+                    name="challenge"
+                    value="pricing"
+                  >
+                  <span>Pricing</span>
+                </label>
+
+                <label class="challenge-card">
+                  <input
+                    type="checkbox"
+                    name="challenge"
+                    value="branding"
+                  >
+                  <span>Branding</span>
+                </label>
+
+                <label class="challenge-card">
+                  <input
+                    type="checkbox"
+                    name="challenge"
+                    value="customers"
+                  >
+                  <span>Finding customers</span>
+                </label>
+
+                <label class="challenge-card">
+                  <input
+                    type="checkbox"
+                    name="challenge"
+                    value="social"
+                  >
+                  <span>Social media</span>
+                </label>
+
+                <label class="challenge-card">
+                  <input
+                    type="checkbox"
+                    name="challenge"
+                    value="plan"
+                  >
+                  <span>Turning it into a real plan</span>
+                </label>
+
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <!-- Question 7 -->
+
+          <div class="question-block final-question">
+
+            <div class="question-number">07</div>
+
+            <div class="question-content">
+
+              <label
+                class="question-title"
+                for="dream"
+              >
+                Finish this sentence...
+              </label>
+
+              <div class="question-title">
+                “I'll believe it's real when...”
+              </div>
+
+              <p class="question-subtitle">
+                What's the moment you're imagining?
+              </p>
+
+              <textarea
+                id="dream"
+                name="dream"
+                class="discovery-textarea"
+                rows="5"
+                placeholder="I make my first sale... I quit my job... I launch my website... I have a business I'm proud of..."
+              ></textarea>
+
+            </div>
+
+          </div>
+
+
+          <!-- Contact -->
+
+          <div class="contact-block">
+
+            <div class="contact-copy">
+
+              <h3>
+                Leave your information 
+                <br>
+                 and I will be in touch!
+              </h3>
+
+              <p>
+              </p>
+
+            </div>
+
+            <div class="contact-fields">
+
+              <input
+                type="text"
+                name="name"
+                class="discovery-input"
+                placeholder="Your name"
+              >
+
+              <input
+                type="email"
+                name="email"
+                class="discovery-input"
+                placeholder="Your email"
+              >
+
+            </div>
+
+          </div>
+
+
+          <!-- Submit -->
+
+          <button
+            type="submit"
+            class="discovery-submit"
+          >
+            <span>Let's Make It Real</span>
+            <span class="submit-arrow">↗</span>
+          </button>
+
+          <p class="form-footnote">
+          </p>
+
+        </form>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- Footer -->
+
+  <footer class="site-footer">
+
+    <div class="container footer-inner">
+
+      <a href="index.html" class="logo">
+        Make it <span>Real.</span>
+      </a>
+
+      <p>
+        Ideas into action. Passions into businesses.
+      </p>
+
+      <p class="footer-copy">
+        © 2026 Make It Real | Saltwater Business Studio. All rights reserved.
+      </p>
+
+    </div>
+
+  </footer>
+ <script>
+  const form = document.getElementById("discoveryForm");
+
+  form.addEventListener("submit", async function (event) {
+    event.preventDefault();
+
+    const submitButton = form.querySelector(".discovery-submit");
+    const originalText = submitButton.innerHTML;
+
+    submitButton.disabled = true;
+    submitButton.innerHTML = "<span>Sending...</span>";
+
+    const formData = new FormData(form);
+
+    const data = new URLSearchParams();
+
+    data.append("name", formData.get("name") || "");
+    data.append("email", formData.get("email") || "");
+    data.append("businessType", formData.get("business-type") || "");
+    data.append("industry", formData.get("industry") || "");
+    data.append("passion", formData.get("passion") || "");
+    data.append("vision", formData.get("vision") || "");
+    data.append("stage", formData.get("stage") || "");
+    data.append("challenges", formData.getAll("challenge").join(", "));
+    data.append("dream", formData.get("dream") || "");
+
+    try {
+      await fetch(
+        "https://script.google.com/macros/s/AKfycbw63z4QYRsrBb9f3D0K1T9AIdVJgYnPCXXkgG2QEg1QXcySD_gSKnQL36RGali_xhTw/exec",
+        {
+          method: "POST",
+          mode: "no-cors",
+          body: data
+        }
+      );
+
+      form.innerHTML = `
+        <div class="form-success">
+          <div class="success-star">✳</div>
+          <div class="section-tag">YOU DID IT</div>
+          <h2>You just made it a little more real.</h2>
+          <p>
+            Thanks for telling me about your idea. I'll take a look
+            and be in touch soon.
+          </p>
+        </div>
+      `;
+
+    } catch (error) {
+      console.error(error);
+
+      submitButton.disabled = false;
+      submitButton.innerHTML = originalText;
+
+      alert("Something went wrong. Please try again.");
+    }
+  });
+</script>
+</body>
+</html>
