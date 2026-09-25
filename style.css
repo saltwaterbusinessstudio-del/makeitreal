@@ -433,7 +433,6 @@ p {
 }
 
 .art-symbol {
-  font-size: 1.1rem;
   color: var(--orange);
 }
 
@@ -628,7 +627,6 @@ p {
   position: absolute;
   bottom: 30px;
   right: 35px;
-  font-size: 4rem;
   color: var(--cream);
 }
 
@@ -704,7 +702,6 @@ p {
 
 .cta-star {
   color: var(--mustard);
-  font-size: 3rem;
   margin-bottom: 25px;
 }
 
@@ -912,7 +909,10 @@ p {
     margin-left: 0;
   }
 
-}/* =========================================
+}
+
+
+/* =========================================
    BUSINESS DISCOVERY / QUIZ
    ========================================= */
 
@@ -986,7 +986,6 @@ p {
 
 .note-star {
   color: var(--orange);
-  font-size: 1rem;
 }
 
 
@@ -1340,7 +1339,7 @@ p {
 }
 
 .submit-arrow {
-  font-size: 1.5rem;
+  flex-shrink: 0;
 }
 
 .form-footnote {
@@ -1434,6 +1433,8 @@ p {
   }
 
 }
+
+
 /* =========================================
    QUIZ PAGE
    ========================================= */
@@ -1461,12 +1462,23 @@ p {
 }
 
 .quiz-hero::after {
-  content: "✳";
+  content: "";
   position: absolute;
   right: 9%;
   top: 90px;
-  color: var(--mustard);
-  font-size: 3rem;
+  width: 3rem;
+  height: 3rem;
+  background: var(--mustard);
+  clip-path: polygon(
+    50% 0%,
+    61% 35%,
+    100% 50%,
+    61% 65%,
+    50% 100%,
+    39% 65%,
+    0% 50%,
+    39% 35%
+  );
 }
 
 .quiz-hero-inner {
@@ -1511,7 +1523,6 @@ p {
 
 .quiz-note span {
   color: var(--orange);
-  font-size: 1.1rem;
 }
 
 .quiz-discovery {
@@ -1531,7 +1542,8 @@ p {
   .quiz-hero::after {
     right: 5%;
     top: 40px;
-    font-size: 2rem;
+    width: 2rem;
+    height: 2rem;
   }
 
   .quiz-hero h1 {
@@ -1549,7 +1561,6 @@ p {
 
 .success-star {
   color: var(--mustard);
-  font-size: 3rem;
   margin-bottom: 20px;
 }
 
@@ -1570,22 +1581,168 @@ p {
   opacity: 0.7;
   cursor: wait;
 }
+
+
 /* =========================================
-   FORCE DECORATIVE SYMBOLS TO TEXT STYLE
+   CSS DRAWN DECORATIVE SYMBOLS
    ========================================= */
 
-.button span,
-.text-link span,
+.button-arrow,
+.text-arrow,
+.back-arrow,
+.submit-arrow,
+.choice-arrow,
+.service-arrow {
+  position: relative;
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+}
+
+.button-arrow::before,
+.text-arrow::before,
+.submit-arrow::before,
+.choice-arrow::before,
+.service-arrow::before {
+  content: "";
+  position: absolute;
+  width: 9px;
+  height: 9px;
+  border-top: 2px solid currentColor;
+  border-right: 2px solid currentColor;
+  top: 3px;
+  right: 2px;
+  transform: rotate(45deg);
+}
+
+.button-arrow::after,
+.text-arrow::after,
+.submit-arrow::after,
+.choice-arrow::after,
+.service-arrow::after {
+  content: "";
+  position: absolute;
+  width: 13px;
+  height: 2px;
+  background: currentColor;
+  top: 8px;
+  left: 2px;
+}
+
+.back-arrow::before {
+  content: "";
+  position: absolute;
+  width: 9px;
+  height: 9px;
+  border-top: 2px solid currentColor;
+  border-right: 2px solid currentColor;
+  top: 3px;
+  left: 2px;
+  transform: rotate(-135deg);
+}
+
+.back-arrow::after {
+  content: "";
+  position: absolute;
+  width: 13px;
+  height: 2px;
+  background: currentColor;
+  top: 8px;
+  right: 2px;
+}
+
 .art-symbol,
-.service-icon,
 .about-star,
 .cta-star,
-.quiz-hero::after,
-.quiz-note span,
-.choice-icon,
-.submit-arrow,
+.note-star,
+.success-star,
+.choice-star,
+.service-star {
+  position: relative;
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  flex-shrink: 0;
+}
+
+.art-symbol::before,
+.about-star::before,
+.cta-star::before,
+.note-star::before,
+.success-star::before,
+.choice-star::before,
+.service-star::before {
+  content: "";
+  position: absolute;
+  inset: 5%;
+  background: currentColor;
+  clip-path: polygon(
+    50% 0%,
+    61% 35%,
+    100% 50%,
+    61% 65%,
+    50% 100%,
+    39% 65%,
+    0% 50%,
+    39% 35%
+  );
+}
+
+.art-symbol {
+  font-size: 1.1rem;
+}
+
+.service-star {
+  font-size: 3rem;
+}
+
+.about-star {
+  font-size: 4rem;
+}
+
+.cta-star {
+  font-size: 3rem;
+}
+
+.note-star {
+  font-size: 1rem;
+}
+
 .success-star {
-  font-family: "DM Sans", Arial, sans-serif;
-  font-variant-emoji: text;
-  font-style: normal;
+  font-size: 3rem;
+}
+
+.choice-star {
+  font-size: 1.6rem;
+}
+
+.button-arrow {
+  width: 18px;
+  height: 18px;
+}
+
+.text-arrow {
+  width: 18px;
+  height: 18px;
+}
+
+.back-arrow {
+  width: 18px;
+  height: 18px;
+}
+
+.submit-arrow {
+  width: 22px;
+  height: 22px;
+}
+
+.choice-arrow {
+  width: 22px;
+  height: 22px;
+}
+
+.service-arrow {
+  width: 3rem;
+  height: 3rem;
 }
